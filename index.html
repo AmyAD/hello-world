@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>二级联动</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<div class="contain">
+		<ul>
+			<li class="menu">
+				<div class="title">区域</div>
+				<div class="input">
+					<div class="select">
+						<label>请选择</label>
+						<select name="" id="localArea" data-type="menu">
+							<option value="">请选择</option>
+						</select>
+					</div>
+				</div>
+				<div class="input">
+					<div class="select">
+						<label>请选择</label>
+						<select name="" ></select>
+					</div>
+				</div>
+			</li>
+			<li class="menu">
+				<div class="title">品牌</div>
+				<div class="input">
+					<div class="select">
+						<label>请选择</label>
+						<select name="" id="ObjectType" data-type="menu">
+							<option value="">请选择</option>
+						</select>
+					</div>
+				</div>
+				<div class="input">
+					<div class="select">
+						<label>请选择</label>
+						<select name="" ></select>
+					</div>
+				</div>
+			</li>
+			<li id="upload-count">
+				还可以上传<span id="count"></span>张，已上传<span id="total"></span>张
+			</li>
+			<li class="upload">
+				<ol id="upload-container">
+					<li class="upload-action">
+						<img src="img/upimg.png" alt="">
+						<input type="file" id="file" class="file">
+					</li>
+				</ol>
+			</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/upload.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/exif.js"></script>
+</body>
+</html>

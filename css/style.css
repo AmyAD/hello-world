@@ -1,0 +1,174 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+}
+html{
+	width:100%;
+	height: 100%;
+	font-size: 62.5%;
+}
+body{
+	font-size: 62.5%;
+	font-family: "Microsoft YaHei";
+}
+.alert_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.1);
+}
+.alert_box {
+  width: 250px;
+  border: 1px solid #2a2c30;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -125px;
+  border-radius: 2px;
+  z-index: 1001;
+  background: #595d61;
+  color: #fff;
+  font-family: "微软雅黑";
+  box-shadow: 0 0 3px #c9cbcc;
+}
+.alert_msg {
+  background: #42474c;
+  padding: 10px;
+  line-height: 1.5;
+  font-size: 14px;
+  text-align: center;
+}
+.alert_btn {
+  border-top: 1px solid #595d61;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: -webkit-box;
+}
+.alert_btn > div {
+  -webkit-box-flex: 1;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+.alert_btn.hover {
+  background: #f00;
+}
+
+
+.contain{
+	width:100%;
+	height: 100%;
+	display:-webkit-box;
+}
+.contain ul{
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	border:1px solid #ccc;
+	-webkit-box-flex : 1;
+	width:100%;
+}
+.contain ul>li{
+	display: -webkit-box;
+	-webkit-box-flex : 1;
+	border-bottom:1px solid #ccc; 
+	padding:1rem;
+}
+.contain ul>li.upload{
+	padding: 0;
+}
+.contain ul>li:last-child{
+	border-bottom:none;
+}
+.menu .title{
+	width:4rem;
+	height:3rem;
+	line-height: 3rem;
+}
+.menu .input{
+	width:10rem;
+	height:4rem;
+	display:-webkit-box;
+	margin-left: 1rem;
+}
+.menu .input:last-child{
+	visibility:hidden;
+}
+.select {
+	-webkit-box-flex:1;
+	width:100%;
+	height:4rem;
+	background: #ccc;
+	position: relative;
+}
+.select label{
+	display: block;
+	width:100%;
+	height:4rem;
+	line-height: 4rem;
+	text-indent: 2rem;
+}
+.select label:after{
+	position: absolute;
+	content: "";
+	border:10px solid transparent;
+	border-top-color:#888;
+	width:0;
+	height:0;
+	top:15px;
+	right:10px;
+}
+.select select{
+	position: absolute;
+	top:0;
+	left:0;
+	opacity:0;
+	width:100%;
+	height: 100%;
+	-webkit-appearance:none;   /*取消表单默认样式*/
+}
+.upload ol{
+	font-size:0;
+	padding:0 .5rem;
+	width: 100%
+}
+.upload li{
+	width:25%;
+	height: 80px;
+	display: inline-block;	
+	border: 5px solid #fff;
+	position: relative;
+
+}
+.upload li img{
+	display:block;
+	width:100%;
+	height:100%;
+}
+.upload .file{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+	opacity: 0;
+}
+.upload-img{
+
+}
+.upload-loading{
+	background:url(../img/upimg_loading.gif) no-repeat;
+	background-size:100%;
+}
+.close{
+	position: absolute;
+	top:0;
+	right:0;
+	background:url(../img/upimg_x.png) no-repeat;
+	width:15px;
+	height: 15px;
+	background-size:100%;
+}
